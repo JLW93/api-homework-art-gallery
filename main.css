@@ -1,0 +1,107 @@
+/* * {
+    border: 1px solid red;
+} */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding-left: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(
+        125deg, 
+        rgba(46, 35, 47, 1), 
+        rgba(46, 35, 47, 1), 
+        rgba(151, 94, 105, 0.97), 
+        rgba(46, 35, 47, 1), 
+        rgba(46, 35, 47, 1)
+        );
+}
+
+@media (max-width: 990px) {
+    .border-start {
+        border: 0px solid !important;
+    }
+
+    .img-overlap {
+        max-width: 40% !important;
+        height: 60vh !important;
+        left: 55% !important;
+        top: 20%
+    }
+}
+
+@media (max-width: 800px) {
+    .img-overlap {
+        max-width: 50% !important;
+        height: 60vh !important;
+        left: 45% !important;
+        top: 30%
+    }
+}
+
+@media (max-width: 575px) {
+    .img-overlap {
+        /* remove this class at this width using js */
+    }
+}
+
+
+
+.title-text {
+    background: linear-gradient(145deg, #E0A800, #E0A800, #FFF, #E0A800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle-text {
+    background: linear-gradient(145deg, #E0A800, #FFF, #E0A800, #E0A800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.body-text {
+    color: #FFD65C;
+}
+
+.dark-bg {
+    background-color: #10040C;
+    width: 107%;
+    margin-left: -3%;
+}
+
+.img-overlap {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    height: 60vh;
+}
+
+/* Bootstrap Edits */
+
+.navbar-brand {
+    background: linear-gradient(145deg, #E0A800, #E0A800, #FFF, #E0A800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.navbar-brand:hover {
+    background: linear-gradient(145deg, #FFF, #E0A800, #FFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    color: #FFCC33
+}
+
+.nav-link:hover {
+    color: #E0A800;
+}
